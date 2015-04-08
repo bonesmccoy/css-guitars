@@ -1,0 +1,27 @@
+.les-paul {
+  position: relative;
+  width: 350px;
+  height: 747px;
+}
+.les-paul.container .template {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.les-paul.container .body {
+  z-index: 20;
+}
+.les-paul.container .body .bottom {
+  border: 1px solid black;
+  height: 186px;
+  width: 236px;
+  margin-left: -119px;
+  border-radius: 50%;
+  background: yellow;
+  position: absolute;
+  z-index: 20;
+  bottom: 17px;
+  left: 50%;
+  opacity: .5;
+}
