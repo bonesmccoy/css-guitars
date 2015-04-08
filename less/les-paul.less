@@ -1,7 +1,7 @@
-.les-paul {
+#les-paul {
   position: relative;
   width: 350px;
-  height:747px;
+  height: 747px;
   &.container {
     .template {
       position: absolute;
@@ -11,43 +11,33 @@
     }
     .body {
       z-index: 20;
-      .top {
+      > * {
+        opacity: 0.5;
+        background: yellow;
         border: 1px solid black;
+        z-index: 20;
+        position: absolute;
+      }
+      .top {
         height: 110px;
         width: 164px;
-        margin-left: -82px;
         border-radius: 77% 65% 85% 81%;
-        background: yellow;
-        position: absolute;
-        z-index: 20;
         bottom: 231px;
-        left: 50%;
-        opacity: .5;
+        left: 92px;
       }
       .bottom-up {
-        border: 1px solid black;
         height: 200px;
         width: 239px;
-        margin-left: -121px;
         border-radius: 50%;
-        background: yellow;
-        position: absolute;
-        z-index: 20;
         bottom: 23px;
-        left: 50%;
+        left: 56px;
       }
-      .bottom {
-        border: 1px solid black;
+      .bottom-down {
         height: 186px;
         width: 236px;
-        margin-left: -119px;
         border-radius: 50%;
-        background: yellow;
-        position: absolute;
-        z-index: 20;
         bottom: 17px;
-        left:50%;
-        opacity: .5;
+        left: 56px;
       }
     }
   }
