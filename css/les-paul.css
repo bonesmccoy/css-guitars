@@ -13,11 +13,60 @@
   z-index: 20;
 }
 #les-paul.container .body > * {
-  opacity: 0.5;
+  opacity: 1;
   background: yellow;
-  border: 1px solid black;
+  border: 0 solid black;
   z-index: 20;
   position: absolute;
+}
+#les-paul.container .body .central {
+  width: 166px;
+  height: 200px;
+  position: absolute;
+  left: 92px;
+  bottom: 86px;
+  opacity: 1;
+  z-index: 30;
+}
+#les-paul.container .body .curve-left {
+  position: absolute;
+  bottom: 175px;
+  height: 300px;
+  width: 300px;
+  z-index: 30;
+  background: none;
+  left: 0;
+}
+#les-paul.container .body .curve-top {
+  width: 44px;
+  height: 81px;
+  position: absolute;
+  left: 60px;
+  bottom: 50px;
+  opacity: 1;
+  background: white;
+  z-index: 40;
+  border-radius: 0 68% 50% 0;
+  border: 1px solid black;
+  transform: skewX(15deg) rotate(1deg);
+}
+#les-paul.container .body .curve-bottom {
+  width: 44px;
+  height: 66px;
+  position: absolute;
+  left: 51px;
+  bottom: 0;
+  opacity: 1;
+  background: white;
+  z-index: 40;
+  border-radius: 0 68% 50% 0;
+  border: 1px solid black;
+  transform: skewX(-28deg) rotateX(-180deg) rotate(-13deg);
+}
+#les-paul.container .body .curve-right-top,
+#les-paul.container .body .curve-right-bottom {
+  left: 300px;
+  border: 1px solid black;
 }
 #les-paul.container .body .top-left {
   height: 89px;
@@ -37,12 +86,10 @@
   width: 60px;
   height: 85px;
   border-radius: 50%;
-  /* border: 0px; */
   border-bottom: 1px solid black;
   background: white;
   bottom: 289px;
   left: 198px;
-  opacity: 0.5;
   transform: rotate(20deg);
 }
 #les-paul.container .body .bottom-up {
