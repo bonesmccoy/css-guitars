@@ -19,22 +19,33 @@
         position: absolute;
       }
       .central {
-        width: 166px;
-        height: 200px;
+        width: 170px;
+        height: 146px;
         position: absolute;
-        left: 92px;
-        bottom: 86px;
+        left: 89px;
+        bottom: 164px;
         opacity: 1;
-        z-index: 30;
+        transform: perspective(149px) rotateX(31deg);
+        /* border: 1px solid; */
       }
       .curve-left {
         position: absolute;
         bottom: 175px;
         height: 300px;
         width: 300px;
-        z-index: 30;
+        z-index: 35;
         background: none;
         left: 0;
+      }
+      .curve-right {
+        position: absolute;
+        bottom: 172px;
+        height: 300px;
+        width: 100px;
+        z-index: 35;
+        background: none;
+        left: 254px;
+        transform: rotateY(180deg);
       }
       .curve-top {
         width: 44px;
@@ -46,7 +57,7 @@
         background: white;
         z-index: 40;
         border-radius: 0 68% 50% 0;
-        border: 1px solid black;
+        border: 0px solid black;
         transform: skewX(15deg) rotate(1deg);
       }
       .curve-bottom {
@@ -59,13 +70,8 @@
         background: white;
         z-index: 40;
         border-radius: 0 68% 50% 0;
-        border: 1px solid black;
+        border: 0px solid black;
         transform: skewX(-28deg) rotateX(-180deg) rotate(-13deg);
-      }
-      .curve-right-top,
-      .curve-right-bottom {
-        left: 300px;
-        border: 1px solid black;
       }
       .top-left {
         height: 89px;
